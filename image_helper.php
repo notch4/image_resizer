@@ -55,8 +55,8 @@ function make_thumb_custom($filename, $folder, $width, $height){
 			'maintain_ratio' => FALSE,
 			'create_thumb' => TRUE,
 			'thumb_marker' => '',
-			'width' => $width,
-			'height' => $height
+			'width' => $width, //width of the image set while calling
+			'height' => $height //height of the image set while calling
 		);
 
 		$ci->image_lib->initialize($config_manip);
