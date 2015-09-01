@@ -17,8 +17,8 @@
 		$ci=& get_instance();
 		$ci->load->library('image_lib');
 
-		$source_path = './uploads/'.$folder.'/'.$filename;
-		$target_path = './uploads/'.$folder.'/thumb/'.$filename;
+		$source_path = './uploads/'.$folder.'/'.$filename;  //path of the sourse
+		$target_path = './uploads/'.$folder.'/thumb/'.$filename; // new path for the image
 
 		$config_manip = array(
 			'image_library' => 'gd2',
