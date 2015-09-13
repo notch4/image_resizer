@@ -24,11 +24,11 @@
 			'image_library' => 'gd2',
 			'source_image' => $source_path,
 			'new_image' => $target_path,
-			'maintain_ratio' => true,
-			'create_thumb' => TRUE,
-			'thumb_marker' => '',
-			'width' => 300,
-			'height' => 200
+			'maintain_ratio' => true, // false if you doesnot want to maintain ration it will be forced to default width and height
+			'create_thumb' => TRUE, 
+			'thumb_marker' => '', // Define thumb marker
+			'width' => 300,  // Default width of the image
+			'height' => 200	 // Default height of the image
 		);
 
 		$ci->image_lib->initialize($config_manip);
